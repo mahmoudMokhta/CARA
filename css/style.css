@@ -1,0 +1,491 @@
+:root {
+    --main-color: rgb(0, 128, 0);
+    --second-color: white;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    height: 100vh;
+    width: 100%;
+   background-image: url(../images/hero4.png);
+   background-size: cover;
+} 
+
+/* start style navbar */
+
+
+
+nav {
+    
+    height:4rem;
+    
+    border-bottom: 1px solid black;
+    padding: 8px 0;
+    position: sticky;
+    top: 10px;
+}
+
+.nav-lift  {
+   
+    width: 50%;
+}
+
+.nav-right  {
+   
+    width: 50%;
+    
+}
+
+.nav-right a {
+    color: black;
+   font-weight: 600;
+}
+
+.nav-right a:hover {
+    color:var(--main-color) ;
+    
+    
+}
+
+@media screen and ( max-width : 600px) {
+    .nav-right {
+        width: 80%;
+    }
+
+
+
+
+}
+
+/* end style navbar */
+
+.green-color {
+
+    color: var(--main-color) ;
+}
+
+.big {
+    font-size: 5rem;
+}
+
+/* style section  header */
+
+
+.header {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center ;
+    height: 100%;
+}
+
+.header div  {
+    
+    position: relative;
+}
+.header div img {
+    
+    position: absolute;
+    right: -2rem;
+}
+.header div p {
+    color: var(--main-color);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 600;
+    right: 5px;
+    
+} 
+.header div p a {
+    color: var(--main-color);
+    text-decoration: none;
+    cursor: pointer;
+} 
+
+@media screen and ( max-width : 600px) {
+    .header{
+        align-items: center;
+    }
+
+}
+
+/* end style section  header */
+
+/* start style section icons */
+.icons {
+    margin: 5rem 0;
+    height: 35rem;
+} 
+
+@media screen and ( max-width : 600px) {
+    .icons {
+        
+        height: 80rem;
+        
+
+       
+    } 
+}
+
+@media screen and ( min-width : 601px) and ( max-width : 970px){
+
+    .icons {
+       
+        height: 50rem;
+    } 
+}
+
+.icons .bl7 {
+ flex-direction: column;
+ width: 10rem;
+ border: 1px solid rgba(0, 0, 0, 0.123);
+ height: 10rem;
+ transition: .3s linear;  
+} 
+
+.icons .bl7:hover {
+    border: 3px solid rgba(0, 0, 0, 0.123);
+    transform: scale( 1.2 , 1.2) rotate(-5deg);
+}
+ 
+ 
+.icons .bl7 button {
+    margin: 1rem  .5rem ;
+    width: 90%;
+    border: white;
+    border-radius: 10%;
+}
+.icons .bl7 button:hover {
+    background-color: rgb(35, 183, 228);
+    border: white;
+    color: white;
+
+}
+
+    /* start  style   products */
+
+.product{
+width: 100%;
+height:60rem ;
+
+}
+
+.h-products {
+    text-align: center;
+}
+
+.c-product {
+
+    width: 100%;
+    height: 100%;
+    margin: 3rem 0;
+    flex-wrap: wrap;
+}
+
+.c-product .add-to-card {
+
+    width: 23%;
+    height: 23rem; 
+    border-radius: 10px;
+    border: 1px solid rgba(0, 128, 0, 0.397);
+    padding: 1rem;
+    transition: .3s linear;
+    filter: grayscale(60%);
+    
+} 
+
+.c-product .add-to-card:hover {
+    border: 3px solid rgba(0, 128, 0, 0.397);
+    filter: grayscale(0);
+    transform: scale( 1.2 , 1.2) rotate(5deg);
+}
+ 
+@media screen and ( max-width : 600px ) {
+    
+    .c-product .add-to-card {
+
+        width: 48%;
+        height: 23rem; 
+        
+}
+     .product{
+      width: 100%;
+      height:105rem ;
+    
+    }
+
+}
+
+@media screen and ( min-width : 601px) and ( max-width : 970px){
+    
+    .c-product .add-to-card {
+
+        width: 33%;
+        
+        
+}
+     .product{
+      
+      height:90rem ;
+    
+    }
+   
+}
+
+
+.c-product div p {
+    margin: 0;
+}
+
+.c-product div h5 {
+    margin: 0;
+}
+
+.c-product div mark i {
+    color: rgb(240, 202, 80);
+    margin-right: 2px;
+}
+
+.i-cart {
+    color: green;
+}
+
+.i-cart i {
+    border: 1px solid rgba(0, 128, 0, 0.534);
+    border-radius: 50%;
+    padding: 7px;
+    background-color: #0000001c;
+}
+
+/* end  style  products */
+
+/* start  style  section offer */
+
+
+.offer {
+    margin: 8rem 0;
+    width: 100%;
+    height: 30vh;
+    background-image: url(../images/b2.jpg);
+    background-size: cover;
+    color: var(--second-color);
+}
+.content-offer{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.content-offer h1 span {
+    color: red;
+}
+
+.content-offer button {
+
+  padding: 5px;
+  border-radius: 5px;
+  transition: .3s linear;
+
+}
+
+.content-offer button:hover {
+    background-color: var(--main-color);
+    color: var(--second-color);
+}
+
+
+
+/* end  style  section offer */
+
+
+/* start  style  section blog */
+
+
+
+
+.blog {
+    width: 100%;
+    height: 100vh;
+    margin: 5rem 0;
+}  
+
+/*                                 margin      سؤؤؤؤؤؤؤؤؤؤؤؤؤؤؤؤؤؤؤؤؤؤال    */
+
+.h-blog  {
+    width: 100%;
+    height: 40%;
+    margin: 0;
+   
+}
+
+.h-blog .one {
+
+    background-image: url(../images/b17.jpg);
+    background-size: cover ;
+  
+    color: var(--second-color);
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 0 0 1rem   ;
+}
+
+.h-blog button {
+    padding: 5px;
+    border:white solid 1px;
+    border-radius: 5px;
+    width: 8rem;
+    background-color: #00000000 ;
+    color: var(--second-color);
+    transition: .3s linear;
+
+}
+
+.h-blog button:hover {
+    border:green solid 1px;
+    
+    background-color: green ;
+}
+
+.h-blog .two {
+
+    background-image: url(../images/b10.jpg)  ;
+    background-size: cover ;
+    
+    color: var(--second-color);
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 0 0 1rem   ;
+
+}
+
+.f-blog {
+    width: 100%;
+    height: 50%;
+    margin: 0;
+   
+    flex-wrap: wrap;
+}
+
+.f-blog div{
+    background-size: cover;
+    flex-direction: column;
+    justify-content: center ;
+    margin-top: 1rem;
+    padding: 0 1rem;
+    width: 49%;
+    height: 50%;
+    
+}    
+
+.f-blog div h2 {
+    color: var(--second-color);
+}
+.f-blog div h4{
+color: red;
+}
+
+
+/*               سؤؤؤؤؤؤؤؤؤؤؤؤؤال   طريقه اسهل ؟؟ */
+.f-blog .one {
+    background-image: url(../images/b7.jpg);
+}
+   
+.f-blog .two {
+    background-image: url(../images/b4.jpg);
+}
+   
+.f-blog .three {
+    background-image: url(../images/b18.jpg);
+}
+   
+     /* end  style  section blog */
+
+
+     /* start  style  section sign up */
+.sign-up {
+    height: 30vh;
+    width: 100%;
+    background-color: rgb(6, 6, 88);
+}
+
+@media screen and ( max-width : 600px ) {
+    .mdia-sign {
+        flex-direction: column;
+    }
+}
+
+.sign-up div {
+    height: 100%;
+}
+
+.sign-up .text {
+    color: var(--second-color);
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+}
+.sign-up .text a {
+    text-decoration: none;
+    color: orange;
+
+}
+.sign-up .form {
+    color: var(--second-color);
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+}
+
+.sign-up .form form :nth-child(1){
+
+    width: 20rem;
+    height: 4rem;
+    border-radius: 10px;
+    outline: non;
+}
+.sign-up .form form :nth-child(2){
+
+    width: 6rem;
+    height: 4rem;
+    border-radius: 10px;
+    background-color: rgb(23, 185, 104);
+    color: var(--second-color);
+    transition: .3s linear;
+}
+
+.sign-up .form form :nth-child(2):hover {
+    background-color:rgb(6, 6, 88) ;
+    border: 1px solid white;
+}
+
+
+
+     /* end  style  section sign up */
+     /* start  style  footer  */
+
+footer {
+    height: 40vh;
+}
+.Follwo-i i {
+    margin: 5px;
+}
+
+
+
+
+
+.f-footer {
+    text-align: center;
+    height: 3vh;
+}
+
+     /* end  style  footer  */
+
+
+
+     
+
